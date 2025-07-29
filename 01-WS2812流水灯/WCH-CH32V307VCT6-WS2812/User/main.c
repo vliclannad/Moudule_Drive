@@ -66,8 +66,8 @@ int main(void)
 	USART_Printf_Init(115200);
 	LED_Init();
 	WS_Init();
-    
-    //如果在实验箱板子使用，需要关闭音频模块电源，关闭杂音
+
+    //如不使用音频模块，可以关闭避免杂音
     ES8388_close();
 
     __enable_irq();
