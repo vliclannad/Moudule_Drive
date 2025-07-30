@@ -102,8 +102,14 @@ u8 ES8388_WaitEvent(I2C_TypeDef* I2Cx, uint32_t I2C_EVENT){
 }
 u8 ES8388_Write_Reg(u8 reg, u8 val)
 {
+    u16 timeout;
+    
     // 等待I2C总线空闲
-    while( I2C_GetFlagStatus( ES8388_IIC, I2C_FLAG_BUSY ) != RESET ); 
+    timeout = 0xFFFF;
+    while( I2C_GetFlagStatus( ES8388_IIC, I2C_FLAG_BUSY ) != RESET ) {
+        timeout--;
+        if(timeout == 0) return 1;
+    }
     
     // 发送起始条件
     I2C_GenerateSTART( ES8388_IIC, ENABLE );
@@ -114,12 +120,20 @@ u8 ES8388_Write_Reg(u8 reg, u8 val)
     if(ES8388_WaitEvent( ES8388_IIC, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED )) return 1;
 
     // 发送寄存器地址
-    while( I2C_GetFlagStatus( ES8388_IIC, I2C_FLAG_TXE ) ==  RESET );
+    timeout = 0xFFFF;
+    while( I2C_GetFlagStatus( ES8388_IIC, I2C_FLAG_TXE ) ==  RESET ) {
+        timeout--;
+        if(timeout == 0) return 1;
+    }
     I2C_SendData(ES8388_IIC,reg);
     if(ES8388_WaitEvent( ES8388_IIC, I2C_EVENT_MASTER_BYTE_TRANSMITTED )) return 1;
 
     // 发送数据
-    while( I2C_GetFlagStatus( ES8388_IIC, I2C_FLAG_TXE ) ==  RESET );
+    timeout = 0xFFFF;
+    while( I2C_GetFlagStatus( ES8388_IIC, I2C_FLAG_TXE ) ==  RESET ) {
+        timeout--;
+        if(timeout == 0) return 1;
+    }
     I2C_SendData(ES8388_IIC,val & 0XFF); 
     if(ES8388_WaitEvent( ES8388_IIC, I2C_EVENT_MASTER_BYTE_TRANSMITTED )) return 1;
 
@@ -130,9 +144,14 @@ u8 ES8388_Write_Reg(u8 reg, u8 val)
 u8 ES8388_Read_Reg(u8 reg)
 {
     u8 temp = 0;
+    u16 timeout;
 
     // 等待I2C总线空闲
-    while( I2C_GetFlagStatus( ES8388_IIC, I2C_FLAG_BUSY ) != RESET );
+    timeout = 0xFFFF;
+    while( I2C_GetFlagStatus( ES8388_IIC, I2C_FLAG_BUSY ) != RESET ) {
+        timeout--;
+        if(timeout == 0) return 0xFF;
+    }
     
     // 第一次传输：写寄存器地址
     I2C_GenerateSTART( ES8388_IIC, ENABLE );
@@ -155,7 +174,14 @@ u8 ES8388_Read_Reg(u8 reg)
     I2C_AcknowledgeConfig(ES8388_IIC, DISABLE);
     I2C_GenerateSTOP( ES8388_IIC, ENABLE );
     
-    while(I2C_GetFlagStatus( ES8388_IIC, I2C_FLAG_RXNE ) ==  RESET);
+    timeout = 0xFFFF;
+    while(I2C_GetFlagStatus( ES8388_IIC, I2C_FLAG_RXNE ) ==  RESET) {
+        timeout--;
+        if(timeout == 0) {
+            I2C_AcknowledgeConfig(ES8388_IIC, ENABLE);
+            return 0xFF;
+        }
+    }
     temp = I2C_ReceiveData( ES8388_IIC );
     
     // 重新使能ACK
