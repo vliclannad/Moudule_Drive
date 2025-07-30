@@ -1476,7 +1476,7 @@ Discarded input sections
  .data          0x0000000000000000        0x0 ./Device/ES8388.o
  .bss           0x0000000000000000        0x0 ./Device/ES8388.o
  .text.ES8388_Read_Reg
-                0x0000000000000000      0x138 ./Device/ES8388.o
+                0x0000000000000000      0x164 ./Device/ES8388.o
  .text.ES8388_I2S_Cfg
                 0x0000000000000000       0x24 ./Device/ES8388.o
  .text.ES8388_ADDA_Cfg
@@ -1691,7 +1691,7 @@ END GROUP
                 0x00000000000001c0                . = ALIGN (0x40)
  *fill*         0x00000000000001a4       0x1c 
 
-.text           0x00000000000001c0     0x3348
+.text           0x00000000000001c0     0x3374
                 0x00000000000001c0                . = ALIGN (0x4)
  *(.text)
  .text          0x00000000000001c0       0x60 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(save-restore.o)
@@ -1957,135 +1957,135 @@ END GROUP
                 0x0000000000000fee       0x26 ./Device/ES8388.o
                 0x0000000000000fee                ES8388_WaitEvent
  .text.ES8388_Write_Reg
-                0x0000000000001014       0xc0 ./Device/ES8388.o
+                0x0000000000001014       0xe8 ./Device/ES8388.o
                 0x0000000000001014                ES8388_Write_Reg
  .text.ES8388_Init
-                0x00000000000010d4      0x142 ./Device/ES8388.o
-                0x00000000000010d4                ES8388_Init
+                0x00000000000010fc      0x142 ./Device/ES8388.o
+                0x00000000000010fc                ES8388_Init
  .text.ES8388_close
-                0x0000000000001216       0x34 ./Device/ES8388.o
-                0x0000000000001216                ES8388_close
+                0x000000000000123e       0x34 ./Device/ES8388.o
+                0x000000000000123e                ES8388_close
  .text.Joystick_Init
-                0x000000000000124a      0x15c ./Device/Joystick.o
-                0x000000000000124a                Joystick_Init
+                0x0000000000001272      0x15c ./Device/Joystick.o
+                0x0000000000001272                Joystick_Init
  .text.LED_Init
-                0x00000000000013a6       0x46 ./Device/led.o
-                0x00000000000013a6                LED_Init
+                0x00000000000013ce       0x46 ./Device/led.o
+                0x00000000000013ce                LED_Init
  .text.Delay_Init
-                0x00000000000013ec       0x2a ./Debug/debug.o
-                0x00000000000013ec                Delay_Init
+                0x0000000000001414       0x2a ./Debug/debug.o
+                0x0000000000001414                Delay_Init
  .text.Delay_Ms
-                0x0000000000001416       0x36 ./Debug/debug.o
-                0x0000000000001416                Delay_Ms
+                0x000000000000143e       0x36 ./Debug/debug.o
+                0x000000000000143e                Delay_Ms
  .text.USART_Printf_Init
-                0x000000000000144c       0x58 ./Debug/debug.o
-                0x000000000000144c                USART_Printf_Init
- .text._write   0x00000000000014a4       0x3a ./Debug/debug.o
-                0x00000000000014a4                _write
+                0x0000000000001474       0x58 ./Debug/debug.o
+                0x0000000000001474                USART_Printf_Init
+ .text._write   0x00000000000014cc       0x3c ./Debug/debug.o
+                0x00000000000014cc                _write
  .text.printchar
-                0x00000000000014de       0x48 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
-                0x00000000000014de                printchar
- .text.prints   0x0000000000001526       0xd8 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
-                0x0000000000001526                prints
+                0x0000000000001508       0x48 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
+                0x0000000000001508                printchar
+ .text.prints   0x0000000000001550       0xd8 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
+                0x0000000000001550                prints
  .text.printInt
-                0x00000000000015fe       0xe6 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
-                0x00000000000015fe                printInt
+                0x0000000000001628       0xe6 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
+                0x0000000000001628                printInt
  .text.printLongLongInt
-                0x00000000000016e4      0x11a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
-                0x00000000000016e4                printLongLongInt
+                0x000000000000170e      0x11a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
+                0x000000000000170e                printLongLongInt
  .text.printDouble
-                0x00000000000017fe       0xfa f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
-                0x00000000000017fe                printDouble
- .text.print    0x00000000000018f8      0x352 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
-                0x00000000000018f8                print
- .text.printf   0x0000000000001c4a       0x22 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
-                0x0000000000001c4a                printf
- .text.puts     0x0000000000001c6c       0x4a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
-                0x0000000000001c6c                puts
+                0x0000000000001828       0xfa f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
+                0x0000000000001828                printDouble
+ .text.print    0x0000000000001922      0x352 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
+                0x0000000000001922                print
+ .text.printf   0x0000000000001c74       0x22 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
+                0x0000000000001c74                printf
+ .text.puts     0x0000000000001c96       0x4a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
+                0x0000000000001c96                puts
  .text.__udivdi3
-                0x0000000000001cb6      0x392 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_udivdi3.o)
-                0x0000000000001cb6                __udivdi3
+                0x0000000000001ce0      0x392 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_udivdi3.o)
+                0x0000000000001ce0                __udivdi3
  .text.__umoddi3
-                0x0000000000002048      0x38a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_umoddi3.o)
-                0x0000000000002048                __umoddi3
- .text.__ledf2  0x00000000000023d2       0xb6 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(ledf2.o)
-                0x00000000000023d2                __ledf2
-                0x00000000000023d2                __ltdf2
+                0x0000000000002072      0x38a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_umoddi3.o)
+                0x0000000000002072                __umoddi3
+ .text.__ledf2  0x00000000000023fc       0xb6 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(ledf2.o)
+                0x00000000000023fc                __ledf2
+                0x00000000000023fc                __ltdf2
  .text.__muldf3
-                0x0000000000002488      0x4b8 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(muldf3.o)
-                0x0000000000002488                __muldf3
+                0x00000000000024b2      0x4b8 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(muldf3.o)
+                0x00000000000024b2                __muldf3
  .text.__subdf3
-                0x0000000000002940      0x73c f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(subdf3.o)
-                0x0000000000002940                __subdf3
+                0x000000000000296a      0x73c f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(subdf3.o)
+                0x000000000000296a                __subdf3
  .text.__fixdfdi
-                0x000000000000307c       0xbc f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(fixdfdi.o)
-                0x000000000000307c                __fixdfdi
+                0x00000000000030a6       0xbc f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(fixdfdi.o)
+                0x00000000000030a6                __fixdfdi
  .text.__floatdidf
-                0x0000000000003138      0x1b2 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(floatdidf.o)
-                0x0000000000003138                __floatdidf
+                0x0000000000003162      0x1b2 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(floatdidf.o)
+                0x0000000000003162                __floatdidf
  .text.__clzsi2
-                0x00000000000032ea       0x6e f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_clzsi2.o)
-                0x00000000000032ea                __clzsi2
+                0x0000000000003314       0x6e f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_clzsi2.o)
+                0x0000000000003314                __clzsi2
  *(.rodata)
  *(.rodata*)
- *fill*         0x0000000000003358        0x0 
- .rodata.JOYSTICK_TEST.str1.4
-                0x0000000000003358       0x2a ./User/main.o
  *fill*         0x0000000000003382        0x2 
+ .rodata.JOYSTICK_TEST.str1.4
+                0x0000000000003384       0x2a ./User/main.o
+ *fill*         0x00000000000033ae        0x2 
  .rodata.main.str1.4
-                0x0000000000003384       0x3a ./User/main.o
- *fill*         0x00000000000033be        0x2 
+                0x00000000000033b0       0x3a ./User/main.o
+ *fill*         0x00000000000033ea        0x2 
  .rodata.print.str1.4
-                0x00000000000033c0        0x8 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
+                0x00000000000033ec        0x8 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
                                           0x7 (size before relaxing)
  .rodata.__muldf3
-                0x00000000000033c8       0x40 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(muldf3.o)
+                0x00000000000033f4       0x40 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(muldf3.o)
  .rodata.__clz_tab
-                0x0000000000003408      0x100 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_clz.o)
-                0x0000000000003408                __clz_tab
+                0x0000000000003434      0x100 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_clz.o)
+                0x0000000000003434                __clz_tab
  *(.gnu.linkonce.t.*)
-                0x0000000000003508                . = ALIGN (0x4)
+                0x0000000000003534                . = ALIGN (0x4)
 
-.rela.dyn       0x0000000000003508        0x0
+.rela.dyn       0x0000000000003534        0x0
  .rela.text.JOYSTICK_TEST
-                0x0000000000003508        0x0 ./User/ch32v30x_it.o
+                0x0000000000003534        0x0 ./User/ch32v30x_it.o
  .rela.text.startup.main
-                0x0000000000003508        0x0 ./User/ch32v30x_it.o
- .rela.init     0x0000000000003508        0x0 ./User/ch32v30x_it.o
- .rela.vector   0x0000000000003508        0x0 ./User/ch32v30x_it.o
+                0x0000000000003534        0x0 ./User/ch32v30x_it.o
+ .rela.init     0x0000000000003534        0x0 ./User/ch32v30x_it.o
+ .rela.vector   0x0000000000003534        0x0 ./User/ch32v30x_it.o
  .rela.text.handle_reset
-                0x0000000000003508        0x0 ./User/ch32v30x_it.o
+                0x0000000000003534        0x0 ./User/ch32v30x_it.o
  .rela.text.prints
-                0x0000000000003508        0x0 ./User/ch32v30x_it.o
+                0x0000000000003534        0x0 ./User/ch32v30x_it.o
  .rela.text.printInt
-                0x0000000000003508        0x0 ./User/ch32v30x_it.o
+                0x0000000000003534        0x0 ./User/ch32v30x_it.o
  .rela.text.printLongLongInt
-                0x0000000000003508        0x0 ./User/ch32v30x_it.o
+                0x0000000000003534        0x0 ./User/ch32v30x_it.o
  .rela.text.printDouble
-                0x0000000000003508        0x0 ./User/ch32v30x_it.o
+                0x0000000000003534        0x0 ./User/ch32v30x_it.o
  .rela.text.print
-                0x0000000000003508        0x0 ./User/ch32v30x_it.o
+                0x0000000000003534        0x0 ./User/ch32v30x_it.o
  .rela.text.printf
-                0x0000000000003508        0x0 ./User/ch32v30x_it.o
+                0x0000000000003534        0x0 ./User/ch32v30x_it.o
 
-.fini           0x0000000000003508        0x0
+.fini           0x0000000000003534        0x0
  *(SORT_NONE(.fini))
-                0x0000000000003508                . = ALIGN (0x4)
+                0x0000000000003534                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (_etext = .)
                 [!provide]                        PROVIDE (_eitcm = .)
 
-.preinit_array  0x0000000000003508        0x0
+.preinit_array  0x0000000000003534        0x0
                 [!provide]                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array)
                 [!provide]                        PROVIDE (__preinit_array_end = .)
 
-.init_array     0x0000000000003508        0x0
+.init_array     0x0000000000003534        0x0
                 [!provide]                        PROVIDE (__init_array_start = .)
  *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
  *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
                 [!provide]                        PROVIDE (__init_array_end = .)
 
-.fini_array     0x0000000000003508        0x0
+.fini_array     0x0000000000003534        0x0
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
  *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
@@ -2105,15 +2105,15 @@ END GROUP
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
 
-.dalign         0x0000000020000000        0x0 load address 0x0000000000003508
+.dalign         0x0000000020000000        0x0 load address 0x0000000000003534
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                PROVIDE (_data_vma = .)
 
-.dlalign        0x0000000000003508        0x0
-                0x0000000000003508                . = ALIGN (0x4)
-                0x0000000000003508                PROVIDE (_data_lma = .)
+.dlalign        0x0000000000003534        0x0
+                0x0000000000003534                . = ALIGN (0x4)
+                0x0000000000003534                PROVIDE (_data_lma = .)
 
-.data           0x0000000020000000       0x28 load address 0x0000000000003508
+.data           0x0000000020000000       0x28 load address 0x0000000000003534
  *(.gnu.linkonce.r.*)
  *(.data .data.*)
  .data.AHBPrescTable
@@ -2141,7 +2141,7 @@ END GROUP
                 0x0000000020000028                . = ALIGN (0x4)
                 0x0000000020000028                PROVIDE (_edata = .)
 
-.bss            0x0000000020000028        0xc load address 0x0000000000003530
+.bss            0x0000000020000028        0xc load address 0x000000000000355c
                 0x0000000020000028                . = ALIGN (0x4)
                 0x0000000020000028                PROVIDE (_sbss = .)
  *(.sbss*)
@@ -2172,7 +2172,7 @@ END GROUP
                 0x0000000020010000                PROVIDE (_eusrstack = .)
 OUTPUT(WCH-CH32V307VCT6-Joystick.elf elf32-littleriscv)
 
-.debug_info     0x0000000000000000     0xf394
+.debug_info     0x0000000000000000     0xf3e4
  .debug_info    0x0000000000000000      0x996 ./User/ch32v30x_it.o
  .debug_info    0x0000000000000996      0xc75 ./User/main.o
  .debug_info    0x000000000000160b      0xbb5 ./User/system_ch32v30x.o
@@ -2185,12 +2185,12 @@ OUTPUT(WCH-CH32V307VCT6-Joystick.elf elf32-littleriscv)
  .debug_info    0x0000000000007780      0xf60 ./Peripheral/src/ch32v30x_misc.o
  .debug_info    0x00000000000086e0     0x158a ./Peripheral/src/ch32v30x_rcc.o
  .debug_info    0x0000000000009c6a     0x13cd ./Peripheral/src/ch32v30x_usart.o
- .debug_info    0x000000000000b037     0x1798 ./Device/ES8388.o
- .debug_info    0x000000000000c7cf     0x1106 ./Device/Joystick.o
- .debug_info    0x000000000000d8d5      0xb75 ./Device/led.o
- .debug_info    0x000000000000e44a      0xf4a ./Debug/debug.o
+ .debug_info    0x000000000000b037     0x17e8 ./Device/ES8388.o
+ .debug_info    0x000000000000c81f     0x1106 ./Device/Joystick.o
+ .debug_info    0x000000000000d925      0xb75 ./Device/led.o
+ .debug_info    0x000000000000e49a      0xf4a ./Debug/debug.o
 
-.debug_abbrev   0x0000000000000000     0x2c11
+.debug_abbrev   0x0000000000000000     0x2c50
  .debug_abbrev  0x0000000000000000      0x1cf ./User/ch32v30x_it.o
  .debug_abbrev  0x00000000000001cf      0x2b2 ./User/main.o
  .debug_abbrev  0x0000000000000481      0x2c0 ./User/system_ch32v30x.o
@@ -2203,10 +2203,10 @@ OUTPUT(WCH-CH32V307VCT6-Joystick.elf elf32-littleriscv)
  .debug_abbrev  0x00000000000017b1      0x2e3 ./Peripheral/src/ch32v30x_misc.o
  .debug_abbrev  0x0000000000001a94      0x351 ./Peripheral/src/ch32v30x_rcc.o
  .debug_abbrev  0x0000000000001de5      0x312 ./Peripheral/src/ch32v30x_usart.o
- .debug_abbrev  0x00000000000020f7      0x345 ./Device/ES8388.o
- .debug_abbrev  0x000000000000243c      0x280 ./Device/Joystick.o
- .debug_abbrev  0x00000000000026bc      0x260 ./Device/led.o
- .debug_abbrev  0x000000000000291c      0x2f5 ./Debug/debug.o
+ .debug_abbrev  0x00000000000020f7      0x384 ./Device/ES8388.o
+ .debug_abbrev  0x000000000000247b      0x280 ./Device/Joystick.o
+ .debug_abbrev  0x00000000000026fb      0x260 ./Device/led.o
+ .debug_abbrev  0x000000000000295b      0x2f5 ./Debug/debug.o
 
 .debug_aranges  0x0000000000000000      0x828
  .debug_aranges
@@ -2242,7 +2242,7 @@ OUTPUT(WCH-CH32V307VCT6-Joystick.elf elf32-littleriscv)
  .debug_aranges
                 0x00000000000007d8       0x50 ./Debug/debug.o
 
-.debug_ranges   0x0000000000000000      0x798
+.debug_ranges   0x0000000000000000      0x7b8
  .debug_ranges  0x0000000000000000       0x18 ./User/ch32v30x_it.o
  .debug_ranges  0x0000000000000018       0x18 ./User/main.o
  .debug_ranges  0x0000000000000030       0x38 ./User/system_ch32v30x.o
@@ -2255,12 +2255,12 @@ OUTPUT(WCH-CH32V307VCT6-Joystick.elf elf32-littleriscv)
  .debug_ranges  0x0000000000000410       0x48 ./Peripheral/src/ch32v30x_misc.o
  .debug_ranges  0x0000000000000458      0x198 ./Peripheral/src/ch32v30x_rcc.o
  .debug_ranges  0x00000000000005f0       0xe0 ./Peripheral/src/ch32v30x_usart.o
- .debug_ranges  0x00000000000006d0       0x68 ./Device/ES8388.o
- .debug_ranges  0x0000000000000738       0x10 ./Device/Joystick.o
- .debug_ranges  0x0000000000000748       0x10 ./Device/led.o
- .debug_ranges  0x0000000000000758       0x40 ./Debug/debug.o
+ .debug_ranges  0x00000000000006d0       0x88 ./Device/ES8388.o
+ .debug_ranges  0x0000000000000758       0x10 ./Device/Joystick.o
+ .debug_ranges  0x0000000000000768       0x10 ./Device/led.o
+ .debug_ranges  0x0000000000000778       0x40 ./Debug/debug.o
 
-.debug_line     0x0000000000000000     0xa1fc
+.debug_line     0x0000000000000000     0xa266
  .debug_line    0x0000000000000000      0x234 ./User/ch32v30x_it.o
  .debug_line    0x0000000000000234      0x4f9 ./User/main.o
  .debug_line    0x000000000000072d      0x8f5 ./User/system_ch32v30x.o
@@ -2273,12 +2273,12 @@ OUTPUT(WCH-CH32V307VCT6-Joystick.elf elf32-littleriscv)
  .debug_line    0x0000000000005a16      0x3d5 ./Peripheral/src/ch32v30x_misc.o
  .debug_line    0x0000000000005deb     0x1990 ./Peripheral/src/ch32v30x_rcc.o
  .debug_line    0x000000000000777b      0xefd ./Peripheral/src/ch32v30x_usart.o
- .debug_line    0x0000000000008678      0xafd ./Device/ES8388.o
- .debug_line    0x0000000000009175      0x5f7 ./Device/Joystick.o
- .debug_line    0x000000000000976c      0x34a ./Device/led.o
- .debug_line    0x0000000000009ab6      0x746 ./Debug/debug.o
+ .debug_line    0x0000000000008678      0xb67 ./Device/ES8388.o
+ .debug_line    0x00000000000091df      0x5f7 ./Device/Joystick.o
+ .debug_line    0x00000000000097d6      0x34a ./Device/led.o
+ .debug_line    0x0000000000009b20      0x746 ./Debug/debug.o
 
-.debug_str      0x0000000000000000     0x2a18
+.debug_str      0x0000000000000000     0x2a20
  .debug_str     0x0000000000000000      0x571 ./User/ch32v30x_it.o
                                         0x5e2 (size before relaxing)
  .debug_str     0x0000000000000571      0x130 ./User/main.o
@@ -2303,13 +2303,13 @@ OUTPUT(WCH-CH32V307VCT6-Joystick.elf elf32-littleriscv)
                                         0xce8 (size before relaxing)
  .debug_str     0x000000000000243d      0x3e2 ./Peripheral/src/ch32v30x_usart.o
                                         0xb03 (size before relaxing)
- .debug_str     0x000000000000281f      0x10e ./Device/ES8388.o
-                                        0xa34 (size before relaxing)
- .debug_str     0x000000000000292d       0x4a ./Device/Joystick.o
+ .debug_str     0x000000000000281f      0x116 ./Device/ES8388.o
+                                        0xa3c (size before relaxing)
+ .debug_str     0x0000000000002935       0x4a ./Device/Joystick.o
                                         0xaae (size before relaxing)
- .debug_str     0x0000000000002977       0x10 ./Device/led.o
+ .debug_str     0x000000000000297f       0x10 ./Device/led.o
                                         0x73c (size before relaxing)
- .debug_str     0x0000000000002987       0x91 ./Debug/debug.o
+ .debug_str     0x000000000000298f       0x91 ./Debug/debug.o
                                         0x92a (size before relaxing)
 
 .comment        0x0000000000000000       0x33
@@ -2331,7 +2331,7 @@ OUTPUT(WCH-CH32V307VCT6-Joystick.elf elf32-littleriscv)
  .comment       0x0000000000000033       0x34 ./Debug/debug.o
  .comment       0x0000000000000033       0x34 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
 
-.debug_frame    0x0000000000000000     0x11d0
+.debug_frame    0x0000000000000000     0x11d8
  .debug_frame   0x0000000000000000       0x30 ./User/ch32v30x_it.o
  .debug_frame   0x0000000000000030       0x48 ./User/main.o
  .debug_frame   0x0000000000000078       0x3c ./User/system_ch32v30x.o
@@ -2343,18 +2343,18 @@ OUTPUT(WCH-CH32V307VCT6-Joystick.elf elf32-littleriscv)
  .debug_frame   0x0000000000000888       0x30 ./Peripheral/src/ch32v30x_misc.o
  .debug_frame   0x00000000000008b8      0x344 ./Peripheral/src/ch32v30x_rcc.o
  .debug_frame   0x0000000000000bfc      0x1e4 ./Peripheral/src/ch32v30x_usart.o
- .debug_frame   0x0000000000000de0      0x198 ./Device/ES8388.o
- .debug_frame   0x0000000000000f78       0x38 ./Device/Joystick.o
- .debug_frame   0x0000000000000fb0       0x30 ./Device/led.o
- .debug_frame   0x0000000000000fe0       0xb8 ./Debug/debug.o
- .debug_frame   0x0000000000001098       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(ledf2.o)
- .debug_frame   0x00000000000010b8       0x54 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(muldf3.o)
- .debug_frame   0x000000000000110c       0x44 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(subdf3.o)
- .debug_frame   0x0000000000001150       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(fixdfdi.o)
- .debug_frame   0x0000000000001170       0x40 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(floatdidf.o)
- .debug_frame   0x00000000000011b0       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_clzsi2.o)
+ .debug_frame   0x0000000000000de0      0x1a0 ./Device/ES8388.o
+ .debug_frame   0x0000000000000f80       0x38 ./Device/Joystick.o
+ .debug_frame   0x0000000000000fb8       0x30 ./Device/led.o
+ .debug_frame   0x0000000000000fe8       0xb8 ./Debug/debug.o
+ .debug_frame   0x00000000000010a0       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(ledf2.o)
+ .debug_frame   0x00000000000010c0       0x54 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(muldf3.o)
+ .debug_frame   0x0000000000001114       0x44 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(subdf3.o)
+ .debug_frame   0x0000000000001158       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(fixdfdi.o)
+ .debug_frame   0x0000000000001178       0x40 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(floatdidf.o)
+ .debug_frame   0x00000000000011b8       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_clzsi2.o)
 
-.debug_loc      0x0000000000000000     0x32f5
+.debug_loc      0x0000000000000000     0x33b8
  .debug_loc     0x0000000000000000      0x163 ./User/system_ch32v30x.o
  .debug_loc     0x0000000000000163      0xab6 ./Peripheral/src/ch32v30x_adc.o
  .debug_loc     0x0000000000000c19       0x7c ./Peripheral/src/ch32v30x_dbgmcu.o
@@ -2364,5 +2364,5 @@ OUTPUT(WCH-CH32V307VCT6-Joystick.elf elf32-littleriscv)
  .debug_loc     0x0000000000001c11       0x47 ./Peripheral/src/ch32v30x_misc.o
  .debug_loc     0x0000000000001c58      0xadb ./Peripheral/src/ch32v30x_rcc.o
  .debug_loc     0x0000000000002733      0x779 ./Peripheral/src/ch32v30x_usart.o
- .debug_loc     0x0000000000002eac      0x2d2 ./Device/ES8388.o
- .debug_loc     0x000000000000317e      0x177 ./Debug/debug.o
+ .debug_loc     0x0000000000002eac      0x395 ./Device/ES8388.o
+ .debug_loc     0x0000000000003241      0x177 ./Debug/debug.o

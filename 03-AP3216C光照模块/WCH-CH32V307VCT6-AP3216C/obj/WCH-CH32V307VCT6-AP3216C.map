@@ -1483,7 +1483,7 @@ Discarded input sections
  .data          0x0000000000000000        0x0 ./Device/ES8388.o
  .bss           0x0000000000000000        0x0 ./Device/ES8388.o
  .text.ES8388_Read_Reg
-                0x0000000000000000      0x138 ./Device/ES8388.o
+                0x0000000000000000      0x164 ./Device/ES8388.o
  .text.ES8388_I2S_Cfg
                 0x0000000000000000       0x24 ./Device/ES8388.o
  .text.ES8388_ADDA_Cfg
@@ -1691,7 +1691,7 @@ END GROUP
                 0x00000000000001c0                . = ALIGN (0x40)
  *fill*         0x00000000000001a4       0x1c 
 
-.text           0x00000000000001c0     0x2fd0
+.text           0x00000000000001c0     0x2ff8
                 0x00000000000001c0                . = ALIGN (0x4)
  *(.text)
  .text          0x00000000000001c0       0x60 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(save-restore.o)
@@ -1927,126 +1927,126 @@ END GROUP
                 0x0000000000000dc8       0x26 ./Device/ES8388.o
                 0x0000000000000dc8                ES8388_WaitEvent
  .text.ES8388_Write_Reg
-                0x0000000000000dee       0xc2 ./Device/ES8388.o
+                0x0000000000000dee       0xea ./Device/ES8388.o
                 0x0000000000000dee                ES8388_Write_Reg
  .text.ES8388_Init
-                0x0000000000000eb0      0x14a ./Device/ES8388.o
-                0x0000000000000eb0                ES8388_Init
+                0x0000000000000ed8      0x14a ./Device/ES8388.o
+                0x0000000000000ed8                ES8388_Init
  .text.ES8388_close
-                0x0000000000000ffa       0x34 ./Device/ES8388.o
-                0x0000000000000ffa                ES8388_close
+                0x0000000000001022       0x34 ./Device/ES8388.o
+                0x0000000000001022                ES8388_close
  .text.LED_Init
-                0x000000000000102e       0x48 ./Device/led.o
-                0x000000000000102e                LED_Init
+                0x0000000000001056       0x48 ./Device/led.o
+                0x0000000000001056                LED_Init
  .text.Delay_Init
-                0x0000000000001076       0x2a ./Debug/debug.o
-                0x0000000000001076                Delay_Init
+                0x000000000000109e       0x2a ./Debug/debug.o
+                0x000000000000109e                Delay_Init
  .text.Delay_Ms
-                0x00000000000010a0       0x36 ./Debug/debug.o
-                0x00000000000010a0                Delay_Ms
+                0x00000000000010c8       0x36 ./Debug/debug.o
+                0x00000000000010c8                Delay_Ms
  .text.USART_Printf_Init
-                0x00000000000010d6       0x5a ./Debug/debug.o
-                0x00000000000010d6                USART_Printf_Init
- .text._write   0x0000000000001130       0x3e ./Debug/debug.o
-                0x0000000000001130                _write
+                0x00000000000010fe       0x5a ./Debug/debug.o
+                0x00000000000010fe                USART_Printf_Init
+ .text._write   0x0000000000001158       0x3e ./Debug/debug.o
+                0x0000000000001158                _write
  .text.printchar
-                0x000000000000116e       0x48 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
-                0x000000000000116e                printchar
- .text.prints   0x00000000000011b6       0xd8 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
-                0x00000000000011b6                prints
+                0x0000000000001196       0x48 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
+                0x0000000000001196                printchar
+ .text.prints   0x00000000000011de       0xd8 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
+                0x00000000000011de                prints
  .text.printInt
-                0x000000000000128e       0xe6 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
-                0x000000000000128e                printInt
+                0x00000000000012b6       0xe6 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
+                0x00000000000012b6                printInt
  .text.printLongLongInt
-                0x0000000000001374      0x11a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
-                0x0000000000001374                printLongLongInt
+                0x000000000000139c      0x11a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
+                0x000000000000139c                printLongLongInt
  .text.printDouble
-                0x000000000000148e       0xfa f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
-                0x000000000000148e                printDouble
- .text.print    0x0000000000001588      0x358 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
-                0x0000000000001588                print
- .text.printf   0x00000000000018e0       0x22 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
-                0x00000000000018e0                printf
- .text.puts     0x0000000000001902       0x4a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
-                0x0000000000001902                puts
+                0x00000000000014b6       0xfa f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
+                0x00000000000014b6                printDouble
+ .text.print    0x00000000000015b0      0x358 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
+                0x00000000000015b0                print
+ .text.printf   0x0000000000001908       0x22 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
+                0x0000000000001908                printf
+ .text.puts     0x000000000000192a       0x4a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
+                0x000000000000192a                puts
  .text.__udivdi3
-                0x000000000000194c      0x392 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_udivdi3.o)
-                0x000000000000194c                __udivdi3
+                0x0000000000001974      0x392 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_udivdi3.o)
+                0x0000000000001974                __udivdi3
  .text.__umoddi3
-                0x0000000000001cde      0x38a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_umoddi3.o)
-                0x0000000000001cde                __umoddi3
- .text.__ledf2  0x0000000000002068       0xb6 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(ledf2.o)
-                0x0000000000002068                __ledf2
-                0x0000000000002068                __ltdf2
+                0x0000000000001d06      0x38a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_umoddi3.o)
+                0x0000000000001d06                __umoddi3
+ .text.__ledf2  0x0000000000002090       0xb6 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(ledf2.o)
+                0x0000000000002090                __ledf2
+                0x0000000000002090                __ltdf2
  .text.__muldf3
-                0x000000000000211e      0x4b8 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(muldf3.o)
-                0x000000000000211e                __muldf3
+                0x0000000000002146      0x4b8 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(muldf3.o)
+                0x0000000000002146                __muldf3
  .text.__subdf3
-                0x00000000000025d6      0x73c f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(subdf3.o)
-                0x00000000000025d6                __subdf3
+                0x00000000000025fe      0x73c f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(subdf3.o)
+                0x00000000000025fe                __subdf3
  .text.__fixdfdi
-                0x0000000000002d12       0xbc f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(fixdfdi.o)
-                0x0000000000002d12                __fixdfdi
+                0x0000000000002d3a       0xbc f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(fixdfdi.o)
+                0x0000000000002d3a                __fixdfdi
  .text.__floatdidf
-                0x0000000000002dce      0x1b2 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(floatdidf.o)
-                0x0000000000002dce                __floatdidf
+                0x0000000000002df6      0x1b2 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(floatdidf.o)
+                0x0000000000002df6                __floatdidf
  .text.__clzsi2
-                0x0000000000002f80       0x6e f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_clzsi2.o)
-                0x0000000000002f80                __clzsi2
+                0x0000000000002fa8       0x6e f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_clzsi2.o)
+                0x0000000000002fa8                __clzsi2
  *(.rodata)
  *(.rodata*)
- *fill*         0x0000000000002fee        0x2 
+ *fill*         0x0000000000003016        0x2 
  .rodata.main.str1.4
-                0x0000000000002ff0       0x58 ./User/main.o
+                0x0000000000003018       0x58 ./User/main.o
  .rodata.print.str1.4
-                0x0000000000003048        0x8 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
+                0x0000000000003070        0x8 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
                                           0x7 (size before relaxing)
  .rodata.__muldf3
-                0x0000000000003050       0x40 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(muldf3.o)
+                0x0000000000003078       0x40 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(muldf3.o)
  .rodata.__clz_tab
-                0x0000000000003090      0x100 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_clz.o)
-                0x0000000000003090                __clz_tab
+                0x00000000000030b8      0x100 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_clz.o)
+                0x00000000000030b8                __clz_tab
  *(.gnu.linkonce.t.*)
-                0x0000000000003190                . = ALIGN (0x4)
+                0x00000000000031b8                . = ALIGN (0x4)
 
-.rela.dyn       0x0000000000003190        0x0
+.rela.dyn       0x00000000000031b8        0x0
  .rela.text.startup.main
-                0x0000000000003190        0x0 ./User/ch32v30x_it.o
- .rela.init     0x0000000000003190        0x0 ./User/ch32v30x_it.o
- .rela.vector   0x0000000000003190        0x0 ./User/ch32v30x_it.o
+                0x00000000000031b8        0x0 ./User/ch32v30x_it.o
+ .rela.init     0x00000000000031b8        0x0 ./User/ch32v30x_it.o
+ .rela.vector   0x00000000000031b8        0x0 ./User/ch32v30x_it.o
  .rela.text.handle_reset
-                0x0000000000003190        0x0 ./User/ch32v30x_it.o
+                0x00000000000031b8        0x0 ./User/ch32v30x_it.o
  .rela.text.prints
-                0x0000000000003190        0x0 ./User/ch32v30x_it.o
+                0x00000000000031b8        0x0 ./User/ch32v30x_it.o
  .rela.text.printInt
-                0x0000000000003190        0x0 ./User/ch32v30x_it.o
+                0x00000000000031b8        0x0 ./User/ch32v30x_it.o
  .rela.text.printLongLongInt
-                0x0000000000003190        0x0 ./User/ch32v30x_it.o
+                0x00000000000031b8        0x0 ./User/ch32v30x_it.o
  .rela.text.printDouble
-                0x0000000000003190        0x0 ./User/ch32v30x_it.o
+                0x00000000000031b8        0x0 ./User/ch32v30x_it.o
  .rela.text.print
-                0x0000000000003190        0x0 ./User/ch32v30x_it.o
+                0x00000000000031b8        0x0 ./User/ch32v30x_it.o
  .rela.text.printf
-                0x0000000000003190        0x0 ./User/ch32v30x_it.o
+                0x00000000000031b8        0x0 ./User/ch32v30x_it.o
 
-.fini           0x0000000000003190        0x0
+.fini           0x00000000000031b8        0x0
  *(SORT_NONE(.fini))
-                0x0000000000003190                . = ALIGN (0x4)
+                0x00000000000031b8                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (_etext = .)
                 [!provide]                        PROVIDE (_eitcm = .)
 
-.preinit_array  0x0000000000003190        0x0
+.preinit_array  0x00000000000031b8        0x0
                 [!provide]                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array)
                 [!provide]                        PROVIDE (__preinit_array_end = .)
 
-.init_array     0x0000000000003190        0x0
+.init_array     0x00000000000031b8        0x0
                 [!provide]                        PROVIDE (__init_array_start = .)
  *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
  *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
                 [!provide]                        PROVIDE (__init_array_end = .)
 
-.fini_array     0x0000000000003190        0x0
+.fini_array     0x00000000000031b8        0x0
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
  *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
@@ -2066,15 +2066,15 @@ END GROUP
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
 
-.dalign         0x0000000020000000        0x0 load address 0x0000000000003190
+.dalign         0x0000000020000000        0x0 load address 0x00000000000031b8
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                PROVIDE (_data_vma = .)
 
-.dlalign        0x0000000000003190        0x0
-                0x0000000000003190                . = ALIGN (0x4)
-                0x0000000000003190                PROVIDE (_data_lma = .)
+.dlalign        0x00000000000031b8        0x0
+                0x00000000000031b8                . = ALIGN (0x4)
+                0x00000000000031b8                PROVIDE (_data_lma = .)
 
-.data           0x0000000020000000       0x28 load address 0x0000000000003190
+.data           0x0000000020000000       0x28 load address 0x00000000000031b8
  *(.gnu.linkonce.r.*)
  *(.data .data.*)
  .data.AHBPrescTable
@@ -2102,7 +2102,7 @@ END GROUP
                 0x0000000020000028                . = ALIGN (0x4)
                 0x0000000020000028                PROVIDE (_edata = .)
 
-.bss            0x0000000020000028        0x8 load address 0x00000000000031b8
+.bss            0x0000000020000028        0x8 load address 0x00000000000031e0
                 0x0000000020000028                . = ALIGN (0x4)
                 0x0000000020000028                PROVIDE (_sbss = .)
  *(.sbss*)
@@ -2130,7 +2130,7 @@ END GROUP
                 0x0000000020010000                PROVIDE (_eusrstack = .)
 OUTPUT(WCH-CH32V307VCT6-AP3216C.elf elf32-littleriscv)
 
-.debug_info     0x0000000000000000     0x9726
+.debug_info     0x0000000000000000     0x9776
  .debug_info    0x0000000000000000       0x4a ./User/ch32v30x_it.o
  .debug_info    0x000000000000004a      0xbdf ./User/main.o
  .debug_info    0x0000000000000c29      0x307 ./User/system_ch32v30x.o
@@ -2143,11 +2143,11 @@ OUTPUT(WCH-CH32V307VCT6-AP3216C.elf elf32-littleriscv)
  .debug_info    0x0000000000003a5b      0xb1f ./Peripheral/src/ch32v30x_usart.o
  .debug_info    0x000000000000457a     0x14d5 ./Driver/IIC.o
  .debug_info    0x0000000000005a4f      0xa80 ./Device/AP3216C.o
- .debug_info    0x00000000000064cf     0x1798 ./Device/ES8388.o
- .debug_info    0x0000000000007c67      0xb75 ./Device/led.o
- .debug_info    0x00000000000087dc      0xf4a ./Debug/debug.o
+ .debug_info    0x00000000000064cf     0x17e8 ./Device/ES8388.o
+ .debug_info    0x0000000000007cb7      0xb75 ./Device/led.o
+ .debug_info    0x000000000000882c      0xf4a ./Debug/debug.o
 
-.debug_abbrev   0x0000000000000000     0x1e6c
+.debug_abbrev   0x0000000000000000     0x1eab
  .debug_abbrev  0x0000000000000000       0x2e ./User/ch32v30x_it.o
  .debug_abbrev  0x000000000000002e      0x26f ./User/main.o
  .debug_abbrev  0x000000000000029d      0x19f ./User/system_ch32v30x.o
@@ -2160,9 +2160,9 @@ OUTPUT(WCH-CH32V307VCT6-AP3216C.elf elf32-littleriscv)
  .debug_abbrev  0x0000000000000ec4      0x201 ./Peripheral/src/ch32v30x_usart.o
  .debug_abbrev  0x00000000000010c5      0x2d8 ./Driver/IIC.o
  .debug_abbrev  0x000000000000139d      0x235 ./Device/AP3216C.o
- .debug_abbrev  0x00000000000015d2      0x345 ./Device/ES8388.o
- .debug_abbrev  0x0000000000001917      0x260 ./Device/led.o
- .debug_abbrev  0x0000000000001b77      0x2f5 ./Debug/debug.o
+ .debug_abbrev  0x00000000000015d2      0x384 ./Device/ES8388.o
+ .debug_abbrev  0x0000000000001956      0x260 ./Device/led.o
+ .debug_abbrev  0x0000000000001bb6      0x2f5 ./Debug/debug.o
 
 .debug_aranges  0x0000000000000000      0x6c0
  .debug_aranges
@@ -2196,7 +2196,7 @@ OUTPUT(WCH-CH32V307VCT6-AP3216C.elf elf32-littleriscv)
  .debug_aranges
                 0x0000000000000670       0x50 ./Debug/debug.o
 
-.debug_ranges   0x0000000000000000      0x640
+.debug_ranges   0x0000000000000000      0x660
  .debug_ranges  0x0000000000000000       0x18 ./User/ch32v30x_it.o
  .debug_ranges  0x0000000000000018       0x10 ./User/main.o
  .debug_ranges  0x0000000000000028       0x38 ./User/system_ch32v30x.o
@@ -2209,11 +2209,11 @@ OUTPUT(WCH-CH32V307VCT6-AP3216C.elf elf32-littleriscv)
  .debug_ranges  0x0000000000000458       0xe0 ./Peripheral/src/ch32v30x_usart.o
  .debug_ranges  0x0000000000000538       0x38 ./Driver/IIC.o
  .debug_ranges  0x0000000000000570       0x18 ./Device/AP3216C.o
- .debug_ranges  0x0000000000000588       0x68 ./Device/ES8388.o
- .debug_ranges  0x00000000000005f0       0x10 ./Device/led.o
- .debug_ranges  0x0000000000000600       0x40 ./Debug/debug.o
+ .debug_ranges  0x0000000000000588       0x88 ./Device/ES8388.o
+ .debug_ranges  0x0000000000000610       0x10 ./Device/led.o
+ .debug_ranges  0x0000000000000620       0x40 ./Debug/debug.o
 
-.debug_line     0x0000000000000000     0x83cb
+.debug_line     0x0000000000000000     0x8435
  .debug_line    0x0000000000000000       0x86 ./User/ch32v30x_it.o
  .debug_line    0x0000000000000086      0x4f0 ./User/main.o
  .debug_line    0x0000000000000576      0x88d ./User/system_ch32v30x.o
@@ -2226,11 +2226,11 @@ OUTPUT(WCH-CH32V307VCT6-AP3216C.elf elf32-littleriscv)
  .debug_line    0x00000000000050fe      0xe95 ./Peripheral/src/ch32v30x_usart.o
  .debug_line    0x0000000000005f93      0xb0e ./Driver/IIC.o
  .debug_line    0x0000000000006aa1      0x339 ./Device/AP3216C.o
- .debug_line    0x0000000000006dda      0xb25 ./Device/ES8388.o
- .debug_line    0x00000000000078ff      0x368 ./Device/led.o
- .debug_line    0x0000000000007c67      0x764 ./Debug/debug.o
+ .debug_line    0x0000000000006dda      0xb8f ./Device/ES8388.o
+ .debug_line    0x0000000000007969      0x368 ./Device/led.o
+ .debug_line    0x0000000000007cd1      0x764 ./Debug/debug.o
 
-.debug_str      0x0000000000000000     0x2313
+.debug_str      0x0000000000000000     0x231b
  .debug_str     0x0000000000000000      0x13d ./User/ch32v30x_it.o
  .debug_str     0x000000000000013d      0x5a0 ./User/main.o
                                         0x6ca (size before relaxing)
@@ -2253,11 +2253,11 @@ OUTPUT(WCH-CH32V307VCT6-AP3216C.elf elf32-littleriscv)
                                         0x979 (size before relaxing)
  .debug_str     0x0000000000002163       0x21 ./Device/AP3216C.o
                                         0x627 (size before relaxing)
- .debug_str     0x0000000000002184       0xee ./Device/ES8388.o
-                                        0xa3e (size before relaxing)
- .debug_str     0x0000000000002272       0x10 ./Device/led.o
+ .debug_str     0x0000000000002184       0xf6 ./Device/ES8388.o
+                                        0xa46 (size before relaxing)
+ .debug_str     0x000000000000227a       0x10 ./Device/led.o
                                         0x746 (size before relaxing)
- .debug_str     0x0000000000002282       0x91 ./Debug/debug.o
+ .debug_str     0x000000000000228a       0x91 ./Debug/debug.o
                                         0x934 (size before relaxing)
 
 .comment        0x0000000000000000       0x33
@@ -2278,7 +2278,7 @@ OUTPUT(WCH-CH32V307VCT6-AP3216C.elf elf32-littleriscv)
  .comment       0x0000000000000033       0x34 ./Debug/debug.o
  .comment       0x0000000000000033       0x34 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libprintfloat.a(printfloat.o)
 
-.debug_frame    0x0000000000000000      0xf58
+.debug_frame    0x0000000000000000      0xf60
  .debug_frame   0x0000000000000000       0x30 ./User/ch32v30x_it.o
  .debug_frame   0x0000000000000030       0x2c ./User/main.o
  .debug_frame   0x000000000000005c       0x3c ./User/system_ch32v30x.o
@@ -2290,17 +2290,17 @@ OUTPUT(WCH-CH32V307VCT6-AP3216C.elf elf32-littleriscv)
  .debug_frame   0x0000000000000854      0x1e4 ./Peripheral/src/ch32v30x_usart.o
  .debug_frame   0x0000000000000a38      0x11c ./Driver/IIC.o
  .debug_frame   0x0000000000000b54       0x4c ./Device/AP3216C.o
- .debug_frame   0x0000000000000ba0      0x198 ./Device/ES8388.o
- .debug_frame   0x0000000000000d38       0x30 ./Device/led.o
- .debug_frame   0x0000000000000d68       0xb8 ./Debug/debug.o
- .debug_frame   0x0000000000000e20       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(ledf2.o)
- .debug_frame   0x0000000000000e40       0x54 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(muldf3.o)
- .debug_frame   0x0000000000000e94       0x44 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(subdf3.o)
- .debug_frame   0x0000000000000ed8       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(fixdfdi.o)
- .debug_frame   0x0000000000000ef8       0x40 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(floatdidf.o)
- .debug_frame   0x0000000000000f38       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_clzsi2.o)
+ .debug_frame   0x0000000000000ba0      0x1a0 ./Device/ES8388.o
+ .debug_frame   0x0000000000000d40       0x30 ./Device/led.o
+ .debug_frame   0x0000000000000d70       0xb8 ./Debug/debug.o
+ .debug_frame   0x0000000000000e28       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(ledf2.o)
+ .debug_frame   0x0000000000000e48       0x54 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(muldf3.o)
+ .debug_frame   0x0000000000000e9c       0x44 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(subdf3.o)
+ .debug_frame   0x0000000000000ee0       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(fixdfdi.o)
+ .debug_frame   0x0000000000000f00       0x40 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(floatdidf.o)
+ .debug_frame   0x0000000000000f40       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_clzsi2.o)
 
-.debug_loc      0x0000000000000000     0x29b5
+.debug_loc      0x0000000000000000     0x2a78
  .debug_loc     0x0000000000000000      0x163 ./User/system_ch32v30x.o
  .debug_loc     0x0000000000000163       0x7c ./Peripheral/src/ch32v30x_dbgmcu.o
  .debug_loc     0x00000000000001df      0x716 ./Peripheral/src/ch32v30x_gpio.o
@@ -2310,5 +2310,5 @@ OUTPUT(WCH-CH32V307VCT6-AP3216C.elf elf32-littleriscv)
  .debug_loc     0x0000000000001ae3      0x779 ./Peripheral/src/ch32v30x_usart.o
  .debug_loc     0x000000000000225c      0x2bc ./Driver/IIC.o
  .debug_loc     0x0000000000002518       0x54 ./Device/AP3216C.o
- .debug_loc     0x000000000000256c      0x2d2 ./Device/ES8388.o
- .debug_loc     0x000000000000283e      0x177 ./Debug/debug.o
+ .debug_loc     0x000000000000256c      0x395 ./Device/ES8388.o
+ .debug_loc     0x0000000000002901      0x177 ./Debug/debug.o
