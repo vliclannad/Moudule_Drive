@@ -16,6 +16,6 @@ S_UPPER_DEPS += \
 
 # Each subdirectory must supply rules for building sources it contributes
 Startup/%.o: ../Startup/%.S
-	@	@	riscv-none-embed-gcc -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -x assembler-with-cpp -I"E:\02-项目\13-RISCV实验箱\模块驱动\19-LCD_ST7796U\WCH-CH32V307VCT6-LCD_ST7796U\Startup" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	@	@	riscv-none-embed-gcc -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -x assembler-with-cpp -I"D:\WorkingProject\Module-Drive\19-LCD_ST7796U\WCH-CH32V307VCT6-LCD_ST7796U\Startup" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@	@
 

@@ -108,15 +108,16 @@ void Lcd_WriteData_16Bit(uint16_t Data)
 void LCD_GPIOInit(void)
 {
     GPIO_InitTypeDef GPIO_InitStructure;
-    RCC_APB2PeriphClockCmd(LCD_LED_RCC, ENABLE);
+    //RCC_APB2PeriphClockCmd(LCD_LED_RCC, ENABLE);
     RCC_APB2PeriphClockCmd(LCD_DC_RCC, ENABLE);
     RCC_APB2PeriphClockCmd(LCD_RST_RCC, ENABLE);
     RCC_APB2PeriphClockCmd(LCD_CS_RCC, ENABLE);
 
+    /*
     GPIO_InitStructure.GPIO_Pin   = LCD_LED_PIN;
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
     GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_Out_PP;
-    GPIO_Init(LCD_LED_PORT, &GPIO_InitStructure);
+    GPIO_Init(LCD_LED_PORT, &GPIO_InitStructure);*/
 
     GPIO_InitStructure.GPIO_Pin   = LCD_DC_PIN;
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
@@ -161,7 +162,7 @@ void LCD_Init(void)
     SPI2_Init();
     LCD_GPIOInit();
     LCD_RESET();
-    LCD_LED_SET;
+    //LCD_LED_SET;
 
     #ifdef ILI9488
     LCD_WR_REG(0XF7);

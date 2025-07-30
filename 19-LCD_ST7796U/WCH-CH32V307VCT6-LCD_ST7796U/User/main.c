@@ -21,6 +21,8 @@
 #include "debug.h"
 #include "lcd.h"
 #include "touch-XPT2046.h"
+#include "led.h"
+#include "ES8388.h"
 
 
 
@@ -49,13 +51,16 @@ int main(void)
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
 	SystemCoreClockUpdate();
 	Delay_Init();
-	USART_Printf_Init(115200);	
+	USART_Printf_Init(115200);
+	LED_Init();
+	ES8388_close();	
 	printf("SystemClk:%d\r\n",SystemCoreClock);
 	printf( "ChipID:%08x\r\n", DBGMCU_GetCHIPID() );
 	printf("This is printf example\r\n");
 	Delay_Ms(3000);
 	LCD_Init();
-	//Touch_Init();
+	//Touch_Init();//å®éªŒç®±3.5å¯¸å±å¹•ä¸æ”¯æŒè§¦æ§
+	LED_GREEN_ON();
 	LCD_Clear(LCD_WHITE);
 	LCD_BadApple(2,2,80,80,bitmap_bytes,4);
 	while(1)
@@ -63,15 +68,6 @@ int main(void)
 	}
 
 }
-
-
-/****************************
-´¥ÃşÆÁ»­»­²âÊÔ
-×ø±ê¼«ÏŞÖµ£ºx:213-3925    y:176-3883
-Ğ±ÂÊ¼ÆËã
-x×ø±ê£º3925/320=12.2656
-y×ø±ê£º3883/480=8.0896
-*****************************/
 void TouchTest(void)
 {
 	uint16_t touchXdata,touchYdata;
@@ -86,11 +82,6 @@ void TouchTest(void)
 		LCD_FillRectangle(Xdata,Ydata,2,2,LCD_BLACK);
 
 	  }
-}
-//ÉãÏñÍ·ÅÄÉã²âÊÔ
-void CameraTest(void)
-{
-
 }
 
 

@@ -55,7 +55,7 @@ all: WCH-CH32V307VCT6-LCD_ST7796U.elf secondary-outputs
 
 # 工具调用
 WCH-CH32V307VCT6-LCD_ST7796U.elf: $(OBJS) $(USER_OBJS)
-	@	@	riscv-none-embed-gcc -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -T "E:\02-项目\13-RISCV实验箱\模块驱动\19-LCD_ST7796U\WCH-CH32V307VCT6-LCD_ST7796U\Ld\Link.ld" -nostartfiles -Xlinker --gc-sections -Wl,-Map,"WCH-CH32V307VCT6-LCD_ST7796U.map" --specs=nano.specs --specs=nosys.specs -o "WCH-CH32V307VCT6-LCD_ST7796U.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	@	@	riscv-none-embed-gcc -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -T "D:\WorkingProject\Module-Drive\19-LCD_ST7796U\WCH-CH32V307VCT6-LCD_ST7796U\Ld\Link.ld" -nostartfiles -Xlinker --gc-sections -Wl,-Map,"WCH-CH32V307VCT6-LCD_ST7796U.map" --specs=nano.specs --specs=nosys.specs -o "WCH-CH32V307VCT6-LCD_ST7796U.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@	@
 WCH-CH32V307VCT6-LCD_ST7796U.hex: WCH-CH32V307VCT6-LCD_ST7796U.elf
 	@	riscv-none-embed-objcopy -O ihex "WCH-CH32V307VCT6-LCD_ST7796U.elf"  "WCH-CH32V307VCT6-LCD_ST7796U.hex"

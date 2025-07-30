@@ -45,9 +45,9 @@
 
 #define ST7796S
 
-#define LCD_LED_RCC       RCC_APB2Periph_GPIOB
-#define LCD_LED_PORT      GPIOB
-#define LCD_LED_PIN       (GPIO_Pin_6)
+//#define LCD_LED_RCC       RCC_APB2Periph_GPIOB
+//#define LCD_LED_PORT      GPIOB
+//#define LCD_LED_PIN       (GPIO_Pin_6)
 
 #define LCD_DC_RCC        RCC_APB2Periph_GPIOD
 #define LCD_DC_PORT       GPIOD
