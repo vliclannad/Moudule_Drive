@@ -31,6 +31,8 @@
 /* Global define */
 
 /* Global Variable */
+//功能
+//可用过按钮矩阵控制三相电机运转
 
 
 /*********************************************************************
@@ -56,6 +58,7 @@ int main(void)
 	LED_Init();
     Motor_Init(20000, 72, 900);//固定频率50Hz
     Keyboard_Init();
+    ES8388_close(); // 关闭ES8388音频芯片
     __enable_irq();
     printf("SystemClk:%d\r\n",SystemCoreClock);
 	printf( "ChipID:%08x\r\n", DBGMCU_GetCHIPID() );

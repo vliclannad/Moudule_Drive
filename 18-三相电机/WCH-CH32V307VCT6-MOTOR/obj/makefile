@@ -55,7 +55,7 @@ all: WCH-CH32V307VCT6-MOTOR.elf secondary-outputs
 
 # 工具调用
 WCH-CH32V307VCT6-MOTOR.elf: $(OBJS) $(USER_OBJS)
-	@	@	riscv-none-embed-gcc -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -T "E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Ld\Link.ld" -nostartfiles -Xlinker --gc-sections -Wl,-Map,"WCH-CH32V307VCT6-MOTOR.map" --specs=nano.specs --specs=nosys.specs  -o "WCH-CH32V307VCT6-MOTOR.elf" $(OBJS) $(USER_OBJS) $(LIBS) -lprintfloat
+	@	@	riscv-none-embed-gcc -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -T "D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Ld\Link.ld" -nostartfiles -Xlinker --gc-sections -Wl,-Map,"WCH-CH32V307VCT6-MOTOR.map" --specs=nano.specs --specs=nosys.specs  -o "WCH-CH32V307VCT6-MOTOR.elf" $(OBJS) $(USER_OBJS) $(LIBS) -lprintfloat
 	@	@
 WCH-CH32V307VCT6-MOTOR.hex: WCH-CH32V307VCT6-MOTOR.elf
 	@	riscv-none-embed-objcopy -O ihex "WCH-CH32V307VCT6-MOTOR.elf"  "WCH-CH32V307VCT6-MOTOR.hex"

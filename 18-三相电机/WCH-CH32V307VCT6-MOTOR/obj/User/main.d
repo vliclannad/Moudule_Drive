@@ -1,108 +1,108 @@
 User/main.o: ../User/main.c \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Debug/debug.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Core/core_riscv.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\User/system_ch32v30x.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\User/ch32v30x_conf.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_adc.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_bkp.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_can.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_crc.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_dac.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_dbgmcu.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_dma.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_exti.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_flash.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_fsmc.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_gpio.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_i2c.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_iwdg.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_pwr.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_rcc.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_rtc.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_sdio.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_spi.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_tim.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_usart.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_wwdg.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\User/ch32v30x_it.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_misc.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Debug/debug.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Core/core_riscv.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\User/system_ch32v30x.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\User/ch32v30x_conf.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_adc.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_bkp.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_can.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_crc.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_dac.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_dbgmcu.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_dma.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_exti.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_flash.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_fsmc.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_gpio.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_i2c.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_iwdg.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_pwr.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_rcc.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_rtc.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_sdio.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_spi.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_tim.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_usart.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_wwdg.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\User/ch32v30x_it.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_misc.h \
  ../User/user.h ../User/ch32v30x_it.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Driver/user_usart.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Device/motor.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Device/keyboard.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Device/led.h \
- E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Debug/Debug.h
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Driver/user_usart.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Device/motor.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Device/keyboard.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Device/led.h \
+ D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Debug/Debug.h
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Debug/debug.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Debug/debug.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Core/core_riscv.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Core/core_riscv.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\User/system_ch32v30x.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\User/system_ch32v30x.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\User/ch32v30x_conf.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\User/ch32v30x_conf.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_adc.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_adc.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_bkp.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_bkp.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_can.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_can.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_crc.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_crc.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_dac.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_dac.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_dbgmcu.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_dbgmcu.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_dma.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_dma.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_exti.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_exti.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_flash.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_flash.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_fsmc.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_fsmc.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_gpio.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_gpio.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_i2c.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_i2c.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_iwdg.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_iwdg.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_pwr.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_pwr.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_rcc.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_rcc.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_rtc.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_rtc.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_sdio.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_sdio.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_spi.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_spi.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_tim.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_tim.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_usart.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_usart.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_wwdg.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_wwdg.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\User/ch32v30x_it.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\User/ch32v30x_it.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_misc.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Peripheral\inc/ch32v30x_misc.h:
 
 ../User/user.h:
 
 ../User/ch32v30x_it.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Driver/user_usart.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Driver/user_usart.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Device/motor.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Device/motor.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Device/keyboard.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Device/keyboard.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Device/led.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Device/led.h:
 
-E:\02-项目\13-RISCV实验箱\模块驱动\18-三相电机\WCH-CH32V307VCT6-MOTOR\Debug/Debug.h:
+D:\WorkingProject\Module-Drive\18-三相电机\WCH-CH32V307VCT6-MOTOR\Debug/Debug.h:

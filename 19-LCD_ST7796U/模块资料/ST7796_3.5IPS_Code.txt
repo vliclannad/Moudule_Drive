@@ -1,0 +1,113 @@
+	LCD_RST_SET;
+	delay_ms(1);
+	LCD_RST_CLR;
+	delay_ms(10);
+	LCD_RST_SET;
+	delay_ms(120);  
+
+
+//************* Start Initial Sequence **********//
+         LCD_WR_REG(0xF0);     
+	LCD_WR_DATA(0xC3);   
+
+	LCD_WR_REG(0xF0);     
+	LCD_WR_DATA(0x96);   
+
+	LCD_WR_REG(0x36);     
+	LCD_WR_DATA(0x48);   
+
+	LCD_WR_REG(0x3A);     
+	LCD_WR_DATA(0x55);   
+
+	LCD_WR_REG(0xB4);     //1-dot Inversion
+	LCD_WR_DATA(0x01);   
+
+	LCD_WR_REG(0xB1);     
+	LCD_WR_DATA(0x80);   //FRS[D7-D4], DIVA[D1-D0] 81 for 15Hz
+	LCD_WR_DATA(0x10);   //RTNA[4:0]
+
+	LCD_WR_REG(0xB5);     
+	LCD_WR_DATA(0x1F);   //VFP FF for 15Hz
+	LCD_WR_DATA(0x50);   //VBP FF for 15Hz
+	LCD_WR_DATA(0x00);   
+	LCD_WR_DATA(0x20);   //HBP
+
+	LCD_WR_REG(0xB6);     
+	LCD_WR_DATA(0x8A);   
+	LCD_WR_DATA(0x07);   
+	LCD_WR_DATA(0x3B);   //480 Gates
+
+	LCD_WR_REG(0xC0);     
+	LCD_WR_DATA(0x80);   
+	LCD_WR_DATA(0x64); //VGH=15V VGL=-10V  
+
+	LCD_WR_REG(0xC1);     
+	LCD_WR_DATA(0x13);  //VOP=4.5V
+
+	LCD_WR_REG(0xC2);     
+	LCD_WR_DATA(0xA7);   
+
+	LCD_WR_REG(0xC5);     
+	LCD_WR_DATA(0x09);   
+
+	LCD_WR_REG(0xE8);     
+	LCD_WR_DATA(0x40);   
+	LCD_WR_DATA(0x8a);   
+	LCD_WR_DATA(0x00);   
+	LCD_WR_DATA(0x00);   
+	LCD_WR_DATA(0x29);   
+	LCD_WR_DATA(0x19);   
+	LCD_WR_DATA(0xA5);   
+	LCD_WR_DATA(0x33);   
+
+	LCD_WR_REG(0xE0);
+	LCD_WR_DATA(0xF0);
+	LCD_WR_DATA(0x06);
+	LCD_WR_DATA(0x0B);
+	LCD_WR_DATA(0x07);
+	LCD_WR_DATA(0x06);
+	LCD_WR_DATA(0x05);
+	LCD_WR_DATA(0x2E);
+	LCD_WR_DATA(0x33);
+	LCD_WR_DATA(0x47);
+	LCD_WR_DATA(0x3A);
+	LCD_WR_DATA(0x17);
+	LCD_WR_DATA(0x16);
+	LCD_WR_DATA(0x2E);
+	LCD_WR_DATA(0x31);
+
+	LCD_WR_REG(0xE1);
+	LCD_WR_DATA(0xF0);
+	LCD_WR_DATA(0x09);
+	LCD_WR_DATA(0x0D);
+	LCD_WR_DATA(0x09);
+	LCD_WR_DATA(0x08);
+	LCD_WR_DATA(0x23);
+	LCD_WR_DATA(0x2E);
+	LCD_WR_DATA(0x33);
+	LCD_WR_DATA(0x46);
+	LCD_WR_DATA(0x38);
+	LCD_WR_DATA(0x13);
+	LCD_WR_DATA(0x13);
+	LCD_WR_DATA(0x2C);
+	LCD_WR_DATA(0x32);
+
+	LCD_WR_REG(0xF0);     
+	LCD_WR_DATA(0x3C);   
+
+	LCD_WR_REG(0xF0);     
+	LCD_WR_DATA(0x69);  		 
+
+	LCD_WR_REG(0x35);     
+	LCD_WR_DATA(0x00); 
+ 
+            LCD_WR_REG(0x21);
+
+	LCD_WR_REG(0x11);     
+
+	delay_ms(120);                //ms
+
+	LCD_WR_REG(0x29);     
+	delay_ms(50); 
+		
+	  
