@@ -71,31 +71,31 @@ int main(void)
     printf("请按下矩阵键盘对应的按键\r\n");
 	while(1)
     {
-        if (gkeyboard_status.key_pressed & (1<<KEY_11)) {
+        if (IS_KEY_PRESSED(KEY_11)) {
             printf("Key 11\r\n");
         }
-        else if (gkeyboard_status.key_pressed & (1<<KEY_12)) {
+        else if (IS_KEY_PRESSED(KEY_12)) {
             printf("Key 12\r\n");
         }
-        else if (gkeyboard_status.key_pressed & (1<<KEY_13)) {
+        else if (IS_KEY_PRESSED(KEY_13)) {
             printf("Key 13\r\n");
         }
-        else if (gkeyboard_status.key_pressed & (1<<KEY_21)) {
+        else if (IS_KEY_PRESSED(KEY_21)) {
             printf("Key 21\r\n");
         }
-        else if (gkeyboard_status.key_pressed & (1<<KEY_22)) {
+        else if (IS_KEY_PRESSED(KEY_22)) {
             printf("Key 22\r\n");
         }
-        else if (gkeyboard_status.key_pressed & (1<<KEY_23)) {
+        else if (IS_KEY_PRESSED(KEY_23)) {
             printf("Key 23\r\n");
         }
-        else if (gkeyboard_status.key_pressed & (1<<KEY_31)) {
+        else if (IS_KEY_PRESSED(KEY_31)) {
             printf("Key 31\r\n");
         }
-        else if (gkeyboard_status.key_pressed & (1<<KEY_32)) {
+        else if (IS_KEY_PRESSED(KEY_32)) {
             printf("Key 32\r\n");
         }
-        else if (gkeyboard_status.key_pressed & (1<<KEY_33)) {
+        else if (IS_KEY_PRESSED(KEY_33)) {
             printf("Key 33\r\n");
         }
         // 清除按键状态
