@@ -155,12 +155,6 @@ void KEYBOARD_EXTI_IRQHandler(void)
             if(GPIO_ReadInputDataBit(KEY_COL_PORT, KEY_COL1_PIN)==0)
             {
                 printf("KEY_11 pressed!\r\n");
-                        TIM_Cmd(TIM2, DISABLE);                     //计数器失能
-        TIM_SetCounter(TIM2, 0);                    //清计数器值
-        TimerOverflowNum = 0;                       //清溢出计数值
-        TIM_ClearITPendingBit(TIM2, TIM_IT_Update); //清除TIM2的中断标志
-
-        MeasureStartFlg = 1;
                 Keyboard_SetKeyPressed(KEY_11);
             }
             if(GPIO_ReadInputDataBit(KEY_COL_PORT, KEY_COL2_PIN)==0)

@@ -56,17 +56,21 @@ int main(void)
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
 	Delay_Init();
 	USART_Printf_Init(115200);
-    BEEP_Init();
+    // 初始化PWM蜂鸣器 - 使用固定1MHz时钟
+    BEEP_PWM_Init_1MHz(); 
     LED_Init();
     ES8388_close();
     LED_GREEN_ON();
-    while (1)
-    {
-        BEEP_ON();
-        Delay_Ms(3000);
-        BEEP_OFF();
-        Delay_Ms(3000);
-    }
     
+    printf("蜂鸣器音乐播放演示开始...\r\n");
+    printf("PWM时钟固定为1MHz\r\n");
+    Delay_Ms(3000);
+    BEEP_PlayBadApple();  // 播放Bad Apple
+        
+        
+    
+    while (1)
+    {       
 
+    }
 }
